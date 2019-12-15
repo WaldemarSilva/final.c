@@ -19,10 +19,10 @@ int main()
 
     printf("Informe o que voce deseja:  \n");
     printf("1 - Soma\n");
-    printf("2 - Subtração\n");
-    printf("3 - União\n");
-    printf("4 - Intersecção\n");
-    printf("5 - Operação de Matriz Individual\n");
+    printf("2 - SubtraÃ§Ã£o\n");
+    printf("3 - UniÃ£o\n");
+    printf("4 - IntersecÃ§Ã£o\n");
+    printf("5 - OperaÃ§Ã£o de Matriz Individual\n");
     printf("6 - Quantidade que o numero da matriz aparece\n");
 
     scanf("%d", &n);
@@ -30,16 +30,16 @@ int main()
     printf("Entre com o numero de linhas: ");
     scanf("%d",&linhas);
     printf("Entre com o numero de colunas: ");
-    scanf("%d",&colunas);   
-    
-    //verificação 	
-	if(linhas > 5 || colunas > 5)
+    scanf("%d",&colunas);
+
+    //verificaÃ§Ã£o
+    if(linhas > 5 || colunas > 5)
     {
-    printf("Erro, o numero dessa matriz é superior a 5");
-    return 0;
+        printf("Erro, o numero dessa matriz Ã© superior a 5");
+        return 0;
     }
-    
-	
+
+
     for (i=0; i<linhas; i++)
     {
         for(j=0; j<colunas; j++)
@@ -68,7 +68,7 @@ int main()
     //soma
     case 1:
         system("cls");
-        printf("\n\nA matriz 1 criada é: \n\n");
+        printf("\n\nA matriz 1 criada Ã©: \n\n");
         /*Mostra a matriz 1 criada*/
         for (i=0; i<linhas; i++)
         {
@@ -78,7 +78,7 @@ int main()
         }
 
         /*Mostra a matriz 2 criada*/
-        printf("\n\nA matriz 2 criada é: \n\n");
+        printf("\n\nA matriz 2 criada Ã©: \n\n");
         for (i=0; i<linhas; i++)
         {
             for(j=0; j<colunas; j++)
@@ -87,7 +87,7 @@ int main()
         }
 
         /*Mostra a matriz 3 (soma) criada*/
-        printf("\n\nA matriz soma é: \n\n");
+        printf("\n\nA matriz soma Ã©: \n\n");
         for (i=0; i<linhas; i++)
         {
             for(j=0; j<colunas; j++)
@@ -95,12 +95,12 @@ int main()
             printf("\n\n");
         }
 
-    break;
+        break;
 
-    //subtração
+    //subtraÃ§Ã£o
     case 2:
         system("cls");
-        printf("\n\nA matriz 1 criada é: \n\n");
+        printf("\n\nA matriz 1 criada Ã©: \n\n");
         /*Mostra a matriz 1 criada*/
         for (i=0; i<linhas; i++)
         {
@@ -110,7 +110,7 @@ int main()
         }
 
         /*Mostra a matriz 2 criada*/
-        printf("\n\nA matriz 2 criada é: \n\n");
+        printf("\n\nA matriz 2 criada Ã©: \n\n");
         for (i=0; i<linhas; i++)
         {
             for(j=0; j<colunas; j++)
@@ -118,8 +118,8 @@ int main()
             printf("\n\n");
         }
 
-        /*Mostra a matriz 3 (subtração) criada*/
-        printf("\n\nA matriz subtração é: \n\n");
+        /*Mostra a matriz 3 (subtraÃ§Ã£o) criada*/
+        printf("\n\nA matriz subtraÃ§Ã£o Ã©: \n\n");
         for (i=0; i<linhas; i++)
         {
             for(j=0; j<colunas; j++)
@@ -127,12 +127,12 @@ int main()
             printf("\n\n");
         }
 
-    break;
+        break;
 
-    //União
+    //UniÃ£o
     case 3:
-    	system("cls");
-        printf("\n\nA matriz 1 criada é: \n\n");
+        system("cls");
+        printf("\n\nA matriz 1 criada Ã©: \n\n");
         /*Mostra a matriz 1 criada*/
         for (i=0; i<linhas; i++)
         {
@@ -142,36 +142,38 @@ int main()
         }
 
         /*Mostra a matriz 2 criada*/
-        printf("\n\nA matriz 2 criada é: \n\n");
+        printf("\n\nA matriz 2 criada Ã©: \n\n");
         for (i=0; i<linhas; i++)
         {
             for(j=0; j<colunas; j++)
                 printf("%3.d\t",mat2[i][j]);
             printf("\n\n");
-        }		        
-        
+        }
+
         for (i=0; i<linhas; i++)
         {
-            for(j=0; j<colunas; j++){
-            	vet1[k] = mat1[i][j] && mat2[i][j];
-            	k++;
-			}
-		}
-		
-		printf("\n\nA união é: \n\n");			
-		for(i=0; i<k; i++){
-			printf("%d", vet1[k]);			
-		}
-                
+            for(j=0; j<colunas; j++)
+            {
+                vet1[k] = mat1[i][j] && mat2[i][j];
+                k++;
+            }
+        }
+
+        printf("\n\nA uniÃ£o Ã©: \n\n");
+        for(i=0; i<k; i++)
+        {
+            printf("%d", vet1[k]);
+        }
+
         printf("\n\n");
-        
 
-    break;
 
-    //Intersecção
+        break;
+
+    //IntersecÃ§Ã£o
     case 4:
-    	system("cls");
-        printf("\n\nA matriz 1 criada é: \n\n");
+        system("cls");
+        printf("\n\nA matriz 1 criada Ã©: \n\n");
         /*Mostra a matriz 1 criada*/
         for (i=0; i<linhas; i++)
         {
@@ -181,105 +183,110 @@ int main()
         }
 
         /*Mostra a matriz 2 criada*/
-        printf("\n\nA matriz 2 criada é: \n\n");
+        printf("\n\nA matriz 2 criada Ã©: \n\n");
         for (i=0; i<linhas; i++)
         {
             for(j=0; j<colunas; j++)
                 printf("%3.d\t",mat2[i][j]);
             printf("\n\n");
-        }       
-        
-        /*Mostra a matriz 3 (intersecção) criada*/        
+        }
+
+        /*Mostra a matriz 3 (intersecÃ§Ã£o) criada*/
         for (i=0; i<linhas; i++)
         {
             for(j=0; j<colunas; j++)
-            if (mat1[i][j] == mat2[i][j]){				
-			printf("%d\t",vet1[i]);
-            printf("\n\n");
-			}
-			else{
-				printf("A matriz não possui intersecção \n\n");
-				printf("Ou seja, não há números em comuns nas matrizes");
-				printf("\n\n");
-				break;
-			}
+                if (mat1[i][j] == mat2[i][j])
+                {
+                    printf("%d\t",vet1[i]);
+                    printf("\n\n");
+                }
+                else
+                {
+                    printf("A matriz nÃ£o possui intersecÃ§Ã£o \n\n");
+                    printf("Ou seja, nÃ£o hÃ¡ nÃºmeros em comuns nas matrizes");
+                    printf("\n\n");
+                    break;
+                }
         }
-        printf("\n\nA intersecção é: \n\n");
-            for(;;){
-            	if(vet1[i]){
-				vetinterseccao[k] = vet1[i]  
-				k++;          		
-				}
-            	printf("%d\t",vet1[i]);
-			}
-			
-			for(vet1[i] = 1){
-				
-			}		
-		       
-    break;
+        printf("\n\nA intersecÃ§Ã£o Ã©: \n\n");
+        for(;;)
+        {
+            if(vet1[i])
+            {
+                vetinterseccao[k] = vet1[i];
+                k++;
+            }
+            printf("%d\t",vet1[i]);
+        }
 
-    //Operação de Matriz Individual
+
+        break;
+
+    //OperaÃ§Ã£o de Matriz Individual
     case 5:
-        printf("1 - Somar um número a matriz");
+        printf("1 - Somar um nÃºmero a matriz");
         printf("2 - Multiplicar pela matriz");
         printf("3 - Voltar ao menu anterior");
         scanf("%d", &b);
         if (b == 1)
         {
-            printf("Você deseja adicionar um número a matriz 1 ou a matriz 2?");
+            printf("VocÃª deseja adicionar um nÃºmero a matriz 1 ou a matriz 2?");
             scanf("%d", &c);
-            if(c == 1){
-            	system("cls");
-            	printf("\n\nA matriz 1 criada é: \n\n");
-            	/*Mostra a matriz 1 criada*/
-            	for (i=0; i<linhas; i++)
-            	{
-            	    for(j=0; j<colunas; j++)
-            	        printf("%3.d\t",mat1[i][j]);
-            	    printf("\n\n");
-            	}         	
-                      	
+            if(c == 1)
+            {
+                system("cls");
+                printf("\n\nA matriz 1 criada Ã©: \n\n");
+                /*Mostra a matriz 1 criada*/
+                for (i=0; i<linhas; i++)
+                {
+                    for(j=0; j<colunas; j++)
+                        printf("%3.d\t",mat1[i][j]);
+                    printf("\n\n");
+                }
+
             }
-            
-			else if(c == 2){            	
-            		system("cls");            		
-            		/*Mostra a matriz 2 criada*/
-            		printf("\n\nA matriz 2 criada é: \n\n");
-            		for (i=0; i<linhas; i++)
-            		{
-            		    for(j=0; j<colunas; j++)
-            		        printf("%3.d\t",mat2[i][j]);
-            		    printf("\n\n");
-            		}           		
-				
-            }           
-                            
+
+            else if(c == 2)
+            {
+                system("cls");
+                /*Mostra a matriz 2 criada*/
+                printf("\n\nA matriz 2 criada Ã©: \n\n");
+                for (i=0; i<linhas; i++)
+                {
+                    for(j=0; j<colunas; j++)
+                        printf("%3.d\t",mat2[i][j]);
+                    printf("\n\n");
+                }
+
+            }
+
             else
             {
                 printf("Erro, valor incorreto");
                 return 0;
             }
         }
-        
-        if(b == 2){
-        	
-		}
-		
-		if (b == 3){
-			break;
-		}        
 
-    break;
+        if(b == 2)
+        {
+
+        }
+
+        if (b == 3)
+        {
+            break;
+        }
+
+        break;
 
     //Quantidade que o numero da matriz aparece
     case 6:
 
-    break;
+        break;
 
-    default:    	
+    default:
         printf("Erro\n");
-        
+
     }
 
     system("pause>null");
